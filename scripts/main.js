@@ -1,5 +1,6 @@
 const courses = [
     {
+        
         subject: 'CSE',
         number: 110,
         title: 'Introduction to Programming',
