@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Course Portal</title>
+    <meta name="description" content="Portal page practicing responsive design, dynamic JavaScript generation, and array filtering.">
+    <meta name="author" content="Hannah Ramirez">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <svg class="site-logo" viewBox="0 0 100 100" width="50" height="50">
+                <circle cx="50" cy="50" r="40" fill="#1e3a8a"/>
+                <polygon points="50,20 80,70 20,70" fill="#3b82f6"/>
+            </svg>
+            <span class="user-name">Hannah Ramirez</span>
+        </div>
+        <button id="menuButton" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="info-card">
+            <h2>Course Work Objectives</h2>
+            <p>Mastering web frontend tools, optimizing image memory footprint down below 125 kB, and learning to elegantly handle raw data arrays dynamically.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Tech Stack Highlights</h2>
+            <p>Using vanilla JavaScript components for state handling and raw CSS Flexbox layout systems to build highly accessible, twitch-free interfaces.</p>
+        </section>
+
+        <section class="certificate-card">
+            <h2>Web and Computer Programming Certificate</h2>
+            
+            <div class="filter-buttons">
+                <button id="btnAll" class="filter-btn active-filter">All Courses</button>
+                <button id="btnWdd" class="filter-btn">WDD Courses</button>
+                <button id="btnCse" class="filter-btn">CSE Courses</button>
+            </div>
+
+            <div id="courseContainer" class="course-grid"></div>
+
+            <div class="credits-display">
+                <p>Total Credits Displayed: <strong id="totalCredits">0</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="currentYear"></span> | Hannah Ramirez | Georgia, USA</p>
+        </div>
+        <div class="footer-modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
